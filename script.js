@@ -187,7 +187,7 @@ console.log();
 
 // iterrar con el ciclo for in
 
-for( indice in textito){
+for (indice in textito) {
     console.log(`este es el lugar numero : del indice ${indice} `);
 };
 console.log();
@@ -222,8 +222,8 @@ console.log();
 
 
 // comprobar  el orden de  dos cadenas de caracteres 
-let c= 'Carlos';
-let d='Dani';
+let c = 'Carlos';
+let d = 'Dani';
 console.log(c.localeCompare(d));
 console.log(d.localeCompare(c));
 console.log(c.localeCompare(c));
@@ -232,9 +232,34 @@ console.log();
 
 // convertir  cadenas de caracteres a números.
 
-let string='20';
+let string = '20';
 let num = parseInt(string);
 console.log(typeof string);
 console.log(typeof num);
 console.log(num);
+console.log();
+
+// Verificar  que un valor que un valor dado corresponda a un número entero 
+let  one = 1;
+console.log(Number.isInteger(one));
+let two = '2';
+console.log(Number.isInteger(two));
+console.log();
+
+//crear función para generar números aleatorios
+const generarAleatorio = (minimo, maximo) =>{
+    return Math.floor(Math.random() * (maximo - minimo +1) + minimo);
+}
+ for(let i = 0; i < 10; i++){
+     console.log(generarAleatorio(1, 20));
+ }
+
+ console.log();
+
+
+ // Calcular el valor absoluto de un numero con la funcion Math.abs
+console.log(Math.abs(one));
+console.log(Math.abs(null));
+console.log(Math.abs(undefined));
+console.log(Math.abs(''));
 console.log();
